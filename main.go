@@ -8,15 +8,12 @@ import (
 
 func setupRouter() *gin.Engine {
 	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.String(200, "pong")
-	})
 	return r
 }
 
 func APICalls(r *gin.Engine) {
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Can use that paths: /info")
+		c.String(http.StatusOK, "Welcome to the Simple app =)")
 	})
 
 	api := r.Group("/api")
@@ -28,7 +25,9 @@ func APICalls(r *gin.Engine) {
 	})
 
 	api.GET("/info", func(c *gin.Context) {
-		c.String(http.StatusOK, "Server OK")
+		c.JSON(http.StatusOK, gin.H{
+			"info": "Server OK!!",
+		})
 	})
 }
 
