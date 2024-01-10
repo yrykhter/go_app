@@ -1,0 +1,22 @@
+# Helm chart for Go application
+
+label: "go-app"
+appName: "go-app"
+
+data:
+  image: "nginx"
+  imagePullPolicy: "IfNotPresent"
+  port: "8080"
+  replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources: 
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
