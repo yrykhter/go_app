@@ -35,6 +35,10 @@ func APICalls(r *gin.Engine) {
 func main() {
 	router := setupRouter()
 	APICalls(router)
+
+	// add Prometheus metrics
 	router.GET("/metrics", gin.WrapH(promhttp.Handler()))
+
+	// Run server
 	router.Run(":8080")
 }
