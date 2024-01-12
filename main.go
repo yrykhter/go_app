@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
 func setupRouter() *gin.Engine {
@@ -11,16 +12,16 @@ func setupRouter() *gin.Engine {
 	return r
 }
 
-func APICalls(r *gin.Engine) *gin.RouterGroup {
+func APICalls(r *gin.Engine) {
 	r.GET("/", func(c *gin.Context) {
 		c.String(http.StatusOK, "Welcome to the Simple app =)")
 	})
 
 	api := r.Group("/api")
 
-	api.GET("/ping", func(c *gin.Context) {
+	api.GET("/health", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "pong",
+			"message": "API is up and working fine",
 		})
 	})
 
@@ -29,23 +30,11 @@ func APICalls(r *gin.Engine) *gin.RouterGroup {
 			"info": "Server OK!!",
 		})
 	})
-
-	return api
-}
-
-func InitRoutes(api *gin.RouterGroup) {
-	api.GET("health", HealthCheck)
-}
-
-func HealthCheck(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"message": "API is up and working fine",
-	})
 }
 
 func main() {
 	router := setupRouter()
-	api := APICalls(router)
-	InitRoutes(api)
+	APICalls(router)
+	router.GET("/metrics", gin.WrapH(promhttp.Handler()))
 	router.Run(":8080")
 }
