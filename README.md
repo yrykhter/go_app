@@ -1,3 +1,3 @@
 # go_app
 
-## Simple go_app for creating infrastructure around it.
+## Simple go_app for creating infrastructure around it
