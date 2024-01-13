@@ -4,7 +4,7 @@ variable "cluster_name" {
   default     = "gke-cluster"
 }
 variable "google_project" {
-  type = string
+  type        = string
   description = "Google project for resources"
 }
 variable "google_project_region" {
