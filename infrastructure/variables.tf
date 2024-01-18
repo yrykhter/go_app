@@ -12,3 +12,7 @@ variable "google_project_region" {
   description = "Project region for the cluster and node pool"
   default     = "us-central1-a"
 }
+variable "kube_config" {
+  type    = string
+  default = "~/.kube/config"
+}
