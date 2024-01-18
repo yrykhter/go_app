@@ -11,11 +11,11 @@ spec:
   storage:    
     type: memory    
     options:      
-      memory:      
-      max-traces: 100000  
+      memory:
+        max-traces: 100000  
   ingress:    
     enabled: false  
   agent:    
     strategy: agent  
-  annotations:    
-    cheduler.alpha.kubernetes.io/critical-pod:
+  # annotations:    
+  #   cheduler.alpha.kubernetes.io/critical-pod:

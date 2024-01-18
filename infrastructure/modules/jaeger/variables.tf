@@ -8,3 +8,7 @@ variable "jaeger_operator_chart_repository" {
   description = "Repository of the jaeger-operator chart"
   default     = "https://jaegertracing.github.io/helm-charts"
 }
+variable "kube_config" {
+  type    = string
+  default = "~/.kube/config"
+}
