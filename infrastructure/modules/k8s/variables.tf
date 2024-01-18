@@ -11,7 +11,7 @@ variable "cluster_name" {
 variable "node_name" {
   type        = string
   description = "Name for the node pool"
-  default     = "node_pool"
+  default     = "node-pool"
 }
 variable "google_project" {
   type        = string
