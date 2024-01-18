@@ -16,6 +16,6 @@ module "jaeger-operator" {
   source = "./modules/jaeger"
 }
 
-# module "traefik"{
-#   source = "./modules/traefik"
-# }
+module "traefik"{
+  source = "./modules/traefik"
+}
