@@ -35,5 +35,5 @@ variable "preemptible_nodes" {
 variable "machine_type" {
   type        = string
   description = "Machine type for the node"
-  default     = "e2-medium"
+  default     = "e2-standard-4"
 }
