@@ -2,6 +2,10 @@
 
 ## Simple go_app for creating infrastructure around it
 
+## Github workflows
+
+Added simple workflow for testing Terraform code
+
 ## Infrastructure
 
 Added components:
