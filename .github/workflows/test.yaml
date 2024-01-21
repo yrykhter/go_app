@@ -3,7 +3,7 @@ name: 'Terraform'
 on:
   push:
     paths:
-    - folder1/**
+    - infrastructure/**
 
   pull_request:
 
