@@ -11,11 +11,12 @@ module "kube-prometheus" {
   kube-version = "36.2.0"
 }
 
-module "jaeger-operator" {
-  depends_on = [ module.k8s ]
-  source = "./modules/jaeger"
-}
+# module "jaeger-operator" {
+#   depends_on = [ module.k8s ]
+#   source = "./modules/jaeger"
+# }
 
-module "traefik"{
-  source = "./modules/traefik"
-}
+# module "traefik"{
+#   depends_on = [ module.k8s ]
+#   source = "./modules/traefik"
+# }
