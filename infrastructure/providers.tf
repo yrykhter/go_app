@@ -20,14 +20,33 @@ terraform {
     }
   }
 }
-provider "helm" {
-  kubernetes {
-    config_path = "~/.kube/config"
+
+data "google_project" "project" {}
+
+provider "google" {
+  project = var.google_project
+  region  = var.google_project_region
+}
+
+
+provider "kubernetes" {
+  host                   = "https://${module.k8s.google_container_cluster.endpoint}"
+  cluster_ca_certificate = base64decode(module.k8s.google_container_cluster.master_auth[0].cluster_ca_certificate)
+  exec {
+    api_version = "client.authentication.k8s.io/v1beta1"
+    args        = []
+    command     = "gke-gcloud-auth-plugin"
   }
 }
 
-# Used to interact with the resources supported by Kubernetes.
-# The provider needs to be configured with the proper credentials before it can be used.
-provider "kubernetes" {
-  config_path = pathexpand(var.kube_config)
+provider "helm" {
+  kubernetes {
+    host                   = module.k8s.google_container_cluster.endpoint
+    cluster_ca_certificate = base64decode(module.k8s.google_container_cluster.master_auth[0].cluster_ca_certificate)
+    exec {
+      api_version = "client.authentication.k8s.io/v1beta1"
+      args        = []
+      command     = "gke-gcloud-auth-plugin"
+    }
+  }
 }
