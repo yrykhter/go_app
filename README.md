@@ -8,11 +8,13 @@ Added simple workflow for testing Terraform code
 
 ## Infrastructure
 
+Maybe use official helm chart ???
+
 Added components:
 
 - Kube-operator (+ Grafana)
-- Jaeger
-- Traefik
+- Jaeger (need to test)
+- Traefik (need to test)
 - Kubernetes cluster (creation in Google Cloud)
     1. add your project as a variable
 
