@@ -8,7 +8,6 @@ module "k8s" {
 module "kube-prometheus" {
   depends_on = [ module.k8s ]
   source = "./modules/kube-prometheus"
-  kube-version = "36.2.0"
 }
 
 # module "jaeger-operator" {
