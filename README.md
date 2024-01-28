@@ -13,7 +13,8 @@ Maybe use official helm chart ???
 Added components:
 
 - Kube-operator (+ Grafana)
-- Jaeger (need to test)
+- Jaeger (need to test):
+    1. Need to install cert-manager first
 - Traefik (need to test)
 - Kubernetes cluster (creation in Google Cloud)
     1. add your project as a variable
