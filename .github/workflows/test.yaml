@@ -2,8 +2,6 @@ name: 'Terraform'
 
 on:
   push:
-    paths:
-    - infrastructure/**
 
   pull_request:
 
@@ -24,4 +22,17 @@ jobs:
       uses: hashicorp/setup-terraform@v1
 
     - name: Terraform Format
-      run: terraform fmt -check
+      run: terraform fmt -check -recursive
+
+  markdown_linter:
+    name: "Markdown linting"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Lint Code Base
+        uses: docker://avtodev/markdown-lint:v1
+        with:
+          args: "**/*.md"
