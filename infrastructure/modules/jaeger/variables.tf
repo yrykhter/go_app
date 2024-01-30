@@ -14,7 +14,7 @@ variable "kube_config" {
 }
 
 variable "jaeger_namespace" {
-  type = string
+  type        = string
   description = "Namespace for Jaeger"
-  default = "observability"
+  default     = "observability"
 }
