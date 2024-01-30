@@ -6,21 +6,21 @@ module "k8s" {
 }
 
 module "kube-prometheus" {
-  depends_on = [ module.k8s ]
-  source = "./modules/kube-prometheus"
+  depends_on = [module.k8s]
+  source     = "./modules/kube-prometheus"
 }
 
 module "jaeger-operator" {
-  depends_on = [ module.k8s, module.cert-manager ]
-  source = "./modules/jaeger"
+  depends_on = [module.k8s, module.cert-manager]
+  source     = "./modules/jaeger"
 }
 
-module "traefik"{
-  depends_on = [ module.k8s ]
-  source = "./modules/traefik"
+module "traefik" {
+  depends_on = [module.k8s]
+  source     = "./modules/traefik"
 }
 
-module "cert-manager"{
-  depends_on = [ module.k8s ]
-  source = "./modules/cert-manager"
+module "cert-manager" {
+  depends_on = [module.k8s]
+  source     = "./modules/cert-manager"
 }

@@ -9,7 +9,7 @@ resource "google_container_cluster" "primary_cluster" {
   project  = var.google_project
   location = var.google_project_region
 
-  deletion_protection = false
+  deletion_protection      = false
   remove_default_node_pool = true
   initial_node_count       = 1
 }
