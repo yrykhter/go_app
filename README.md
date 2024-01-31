@@ -14,7 +14,7 @@ Added components:
 
 - Kube-operator (+ Grafana)
 - Jaeger (need to test):
-    1. secret "jaeger-operator-service-cert" not found - ???
+    1. Need kubeconfig for the yaml
     1. Config cert-manager for Jaeger
 - Traefik (need to test)
 - Kubernetes cluster (creation in Google Cloud)
