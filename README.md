@@ -22,5 +22,4 @@ Added components:
 
 ## FIXME: Update README later
 
-Add this row just for test the markdown workflow
 <!-- namespace deleted before helm chart -->
