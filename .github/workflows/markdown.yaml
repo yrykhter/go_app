@@ -1,4 +1,4 @@
-name: 'Shall linters'
+name: 'Markdown linter'
 
 on:
   push:
