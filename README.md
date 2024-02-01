@@ -20,4 +20,5 @@ Added components:
 - Kubernetes cluster (creation in Google Cloud)
     1. add your project as a variable
 
-Update README later!
+## FIXME: Update README later
+<!-- namespace deleted before helm chart -->
