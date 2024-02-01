@@ -3,10 +3,12 @@ name: 'Markdown linter'
 on:
   push:
     paths:
-    - '**/*.md'
+      - '**/*.md'
+    branches:
+      - 'main'
   pull_request:
     paths:
-    - '**/*.md'
+      - '**/*.md'
 
 jobs:
   markdown_linter:

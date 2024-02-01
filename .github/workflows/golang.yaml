@@ -3,12 +3,14 @@ name: 'Golang'
 on:
   push:
     paths:
-    - '**/*.go'
-    - '**/*_test.go'
+      - '**/*.go'
+      - '**/*_test.go'
+    branches:
+      - 'main'
   pull_request:
     paths:
-    - '**/*.go'
-    - '**/*_test.go'
+      - '**/*.go'
+      - '**/*_test.go'
 
 jobs:
   golang:
