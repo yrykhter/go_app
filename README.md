@@ -8,7 +8,7 @@ Added simple workflow for testing Terraform code
 
 ## Infrastructure
 
-Maybe use official helm chart ???
+Use official helm charts for Prometheus and Grafana!
 
 Added components:
 
