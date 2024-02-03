@@ -19,7 +19,7 @@ resource "helm_release" "traefik" {
   }
   # expose Traefik for test purpose
   set {
-    name = "ports.traefik.expose"
-    value= true
+    name  = "ports.traefik.expose"
+    value = true
   }
 }
