@@ -17,4 +17,9 @@ resource "helm_release" "traefik" {
     name  = "deployment.replicas"
     value = var.replica_count
   }
+  # expose Traefik for test purpose
+  set {
+    name = "ports.traefik.expose"
+    value= true
+  }
 }
