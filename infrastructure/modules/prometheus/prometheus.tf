@@ -4,9 +4,13 @@ resource "kubernetes_namespace" "monitoring" {
   }
 }
 
-resource "helm_release" "kube-prometheus" {
-  name       = "kube-prometheus-stack"
+resource "helm_release" "prometheus" {
+  name       = "prometheus"
   namespace  = var.namespace
   repository = "https://prometheus-community.github.io/helm-charts"
-  chart      = "kube-prometheus-stack"
+  chart      = "prometheus"
+
+  values = [
+    "${file("${path.module}/values.yaml")}"
+  ]
 }
