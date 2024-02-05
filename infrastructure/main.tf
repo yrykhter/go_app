@@ -7,7 +7,7 @@ module "k8s" {
 
 module "prometheus" {
   depends_on = [module.k8s]
-  source     = "./modules/kube-prometheus"
+  source     = "./modules/prometheus"
 }
 module "traefik" {
   depends_on = [module.k8s]
