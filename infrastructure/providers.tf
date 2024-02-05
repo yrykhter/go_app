@@ -32,6 +32,7 @@ provider "google" {
 provider "kubernetes" {
   host                   = "https://${module.k8s.google_container_cluster.endpoint}"
   cluster_ca_certificate = base64decode(module.k8s.google_container_cluster.master_auth[0].cluster_ca_certificate)
+  config_path            = "~/.kube/config"
   exec {
     api_version = "client.authentication.k8s.io/v1beta1"
     args        = []
@@ -43,6 +44,7 @@ provider "helm" {
   kubernetes {
     host                   = module.k8s.google_container_cluster.endpoint
     cluster_ca_certificate = base64decode(module.k8s.google_container_cluster.master_auth[0].cluster_ca_certificate)
+    config_path            = "~/.kube/config"
     exec {
       api_version = "client.authentication.k8s.io/v1beta1"
       args        = []
