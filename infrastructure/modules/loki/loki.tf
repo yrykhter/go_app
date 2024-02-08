@@ -4,8 +4,8 @@ resource "helm_release" "loki" {
   repository = "https://grafana.github.io/helm-charts"
   chart      = "loki-stack"
 
-#   values = [
-#     "${file("${path.module}/values.yaml")}"
-#   ]
+  #   values = [
+  #     "${file("${path.module}/values.yaml")}"
+  #   ]
 
 }
