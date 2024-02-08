@@ -1,29 +1,30 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.appName }}
-  labels: {{ .Values.label }}
+  name: {{.Values.appName}}
+  labels: {{.Values.label}}
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{.Values.replicaCount}}
   selector:
     matchLabels:
-      {{ .Values.appName }}
+      {{.Values.appName}}
   template:
     metadata:
       labels:
-        {{ .Values.label }}
+        {{.Values.label}}
     spec:
       containers:
-        - name: {{ .Chart.Name }}
-          image: {{ .Values.image }}
-          imagePullPolicy: {{ .Values.imagePullPolicy }}
+        - name: {{.Chart.Name}}
+          image: {{.Values.image}}
+          imagePullPolicy: {{.Values.imagePullPolicy}}
           ports:
             - name: http
-              containerPort: {{ .Values.service.port }}
+              containerPort: {{.Values.service.port}}
               protocol: TCP
           livenessProbe:
             httpGet:
               path: /api/health
               port: http
           resources:
-            {{- toYaml .Values.resources | nindent 12 }}
+            '{{- toYaml .Values.resources | nindent 12}}'
