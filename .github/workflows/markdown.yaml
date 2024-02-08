@@ -1,6 +1,7 @@
+---
 name: 'Markdown linter'
 
-on:
+'on':
   push:
     paths:
       - '**/*.md'
