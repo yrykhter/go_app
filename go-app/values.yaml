@@ -1,3 +1,4 @@
+---
 # Helm chart for Go application
 
 label: "go-app"
@@ -13,7 +14,7 @@ service:
   type: ClusterIP
   port: 80
 
-resources: 
+resources:
   limits:
     cpu: 100m
     memory: 128Mi
