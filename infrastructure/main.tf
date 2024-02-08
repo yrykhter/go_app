@@ -19,6 +19,11 @@ module "grafana" {
   source     = "./modules/grafana"
 }
 
+module "loki" {
+  depends_on = [module.k8s]
+  source     = "./modules/loki"
+}
+
 # module "jaeger-operator" {
 #   depends_on = [module.k8s, module.cert-manager]
 #   source     = "./modules/jaeger"
