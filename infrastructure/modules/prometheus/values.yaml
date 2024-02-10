@@ -1,4 +1,10 @@
 ---
+# server:
+#   podLabels:
+#     - "traefik.http.routers.prometheus.rule=prometheus.localhost"
+#     - "traefik.http.routers.prometheus.service=prometheus"
+#     - "traefik.http.routers.prometheus.middlewares=traefik-auth"
+#     - "traefik.http.services.prometheus.loadbalancer.server.port=9090"
 scrape_configs:
   - job_name: 'prometheus'
     scrape_interval: 5s

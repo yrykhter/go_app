@@ -1,4 +1,9 @@
 ---
+# extraLabels:
+#   - "traefik.http.routers.grafana.rule=grafana.localhost"
+#   - "traefik.http.routers.grafana.service=grafana"
+#   - "traefik.http.routers.grafana.middlewares=traefik-auth"
+#   - "traefik.http.services.grafana.loadbalancer.server.port=3000"
 datasources:
   datasources.yaml:
     apiVersion: 1
