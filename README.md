@@ -16,6 +16,7 @@ Added components:
 - Jaeger (need to test):
     1. Need kubeconfig for the yaml
     1. Config cert-manager for Jaeger
+- Loki (as an aggregator of logs)
 - Traefik (need to test)
 - Kubernetes cluster (creation in Google Cloud)
     1. add your project as a variable
