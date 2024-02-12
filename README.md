@@ -8,17 +8,16 @@ Added simple workflow for testing Terraform code
 
 ## Infrastructure
 
-Use official helm charts for Prometheus and Grafana!
-
 Added components:
 
-- Kube-operator (+ Grafana)
+- Grafana
+- Prometheus
 - Jaeger (need to test):
     1. Need kubeconfig for the yaml
     1. Config cert-manager for Jaeger
 - Loki (as an aggregator of logs)
 - Traefik (need to test)
-- Kubernetes cluster (creation in Google Cloud)
+- Kubernetes cluster (use Google Cloud)
     1. add your project as a variable
 
 ## FIXME: Update README later
