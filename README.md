@@ -10,8 +10,8 @@ Added simple workflow for testing Terraform code
 
 Added components:
 
-- Grafana
-- Prometheus
+- Grafana (official chart)
+- Prometheus (official chart)
 - Jaeger (need to test):
     1. Need kubeconfig for the yaml
     1. Config cert-manager for Jaeger
