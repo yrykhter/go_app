@@ -10,15 +10,15 @@ Added simple workflow for testing Terraform code
 
 Added components:
 
+- Kubernetes cluster (use Google Cloud)
+    1. add your project as a variable
 - Grafana (official chart)
 - Prometheus (official chart)
+- Loki (as an aggregator of logs)
+- Traefik (need to test)
 - Jaeger (need to test):
     1. Need kubeconfig for the yaml
     1. Config cert-manager for Jaeger
-- Loki (as an aggregator of logs)
-- Traefik (need to test)
-- Kubernetes cluster (use Google Cloud)
-    1. add your project as a variable
 
 ## FIXME: Update README later
 
