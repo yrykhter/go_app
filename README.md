@@ -2,6 +2,17 @@
 
 ## Simple go_app for creating infrastructure around it
 
+## Point to do
+
+- Add Jaeger
+- Add code to app tha can create rows in db
+- Add secret for db access
+- Add Vault to keep secrets
+- Add db for Golang code
+- Add db in infrastructure
+- Create backup/restore process
+- Update README later
+
 ## Github workflows
 
 Added simple workflow for testing Terraform code
