@@ -10,6 +10,7 @@
 - Add Vault to keep secrets
 - Add db for Golang code
 - Add db in infrastructure
+- Decide what kind of db to use
 - Create backup/restore process
 - Update README later
 
