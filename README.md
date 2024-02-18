@@ -4,6 +4,7 @@
 
 ## Point to do
 
+- Update naming for vars
 - Add Jaeger
 - Add code to app tha can create rows in db
 - Add secret for db access
