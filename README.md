@@ -6,6 +6,7 @@
 
 - Update naming for vars
 - Add Jaeger
+- Add FluxCD - ???
 - Add code to app tha can create rows in db
 - Add secret for db access
 - Add Vault to keep secrets
