@@ -9,7 +9,7 @@
 - Add FluxCD - ???
 - Configure Traefik as load balancer
 - Do I need cert-manager ???
-- Add code to app tha can create rows in db
+- Add code to app tha can create rows in db (CRUD)
 - Add secret for db access
 - Add Vault to keep secrets
 - Add db for Golang code
