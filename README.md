@@ -9,6 +9,7 @@
 - Add FluxCD - ???
 - Configure Traefik as load balancer
 - Do I need cert-manager ???
+- Update all configs
 - Add code to app that can create rows in db (CRUD)
 - Add secret for db access
 - Add Vault to keep secrets
