@@ -38,6 +38,6 @@ Added components:
     1. Need kubeconfig for the yaml
     1. Config cert-manager for Jaeger
 
-## FIXME: Update README later
+## Known issues
 
-<!-- namespace deleted before helm chart -->
+1. namespace deleted before helm chart
