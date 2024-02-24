@@ -4,6 +4,7 @@
 
 ## Point to do
 
+- Add some options for tools
 - Update naming for vars
 - Add Jaeger
 - Add FluxCD - ???
