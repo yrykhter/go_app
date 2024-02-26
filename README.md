@@ -7,7 +7,7 @@
 - Add some options for tools
 - Update naming for vars
 - Add Jaeger
-- Add FluxCD - ???
+- Add FluxCD/ArgoCD - ???
 - Configure Traefik as load balancer
 - Do I need cert-manager ???
 - Update all configs
