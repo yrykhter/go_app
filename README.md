@@ -8,7 +8,7 @@
 - Update naming for vars
 - Add Jaeger
 - Add FluxCD/ArgoCD - ???
-- Configure Traefik as load balancer
+- Configure Traefik as load balancer/ add another option
 - Do I need cert-manager ???
 - Update all configs
 - Add code to app that can create rows in db (CRUD)
