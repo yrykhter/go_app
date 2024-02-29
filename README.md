@@ -24,7 +24,12 @@
 
 ## Github workflows
 
-Added simple workflow for testing Terraform code
+Added simple workflow for testing:
+
+- Terraform code
+- Markdown
+- YAML
+- GoLang
 
 ## Infrastructure
 
