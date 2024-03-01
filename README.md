@@ -43,8 +43,8 @@ Added components:
 - Traefik (need to test)
 - Jaeger (need to test):
     1. Need kubeconfig for the yaml
-    1. Config cert-manager for Jaeger
 
 ## Known issues
 
 1. namespace deleted before helm chart
+1. config cert-manager for Jaeger
