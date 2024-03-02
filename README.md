@@ -2,7 +2,7 @@
 
 ## Simple go_app for creating infrastructure around it
 
-## Point to do
+## Points to do
 
 - Add some options for tools
 - Update naming for vars
