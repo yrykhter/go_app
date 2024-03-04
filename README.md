@@ -21,6 +21,7 @@
 - Add README to all modules
 - Update README later
 - Divide into two repos - ?
+- Use best practices for Dockerfile
 
 ## Github workflows
 
