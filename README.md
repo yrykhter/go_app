@@ -21,7 +21,8 @@
 - Add README to all modules
 - Update README later
 - Divide into two repos - ?
-- Use best practices for Dockerfile
+- Use best practices(bp) for Dockerfile
+- Use bp for k8s
 
 ## Github workflows
 
