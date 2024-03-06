@@ -20,7 +20,6 @@
 - Create backup/restore process
 - Add README to all modules
 - Update README later
-- Divide into two repos - ?
 - Use best practices(bp) for Dockerfile
 - Use bp for k8s
 
