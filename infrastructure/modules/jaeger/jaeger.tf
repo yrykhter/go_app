@@ -1,7 +1,7 @@
 resource "helm_release" "jaeger_operator" {
   repository = var.jaeger_operator_chart_repository
   name       = "jaeger-operator"
-  namespace  = var.jaeger_namespace
+  namespace  = kubernetes_namespace.observability.metadata[0].name
   chart      = "jaeger-operator"
   version    = var.jaeger_operator_chart_version
   timeout    = 3600
