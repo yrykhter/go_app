@@ -47,5 +47,5 @@ Added components:
 
 ## Known issues
 
-1. namespace deleted before helm chart
+1. namespace deleted before helm chart (update other modules as Jaeger)
 1. config cert-manager for Jaeger
