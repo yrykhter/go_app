@@ -22,6 +22,7 @@
 - Update README later
 - Use best practices(bp) for Dockerfile
 - Use bp for k8s
+- Use bp for Golan code
 
 ## Github workflows
 
