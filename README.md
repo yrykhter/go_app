@@ -23,6 +23,7 @@
 - Use best practices(bp) for Dockerfile
 - Use bp for k8s
 - Use bp for Golang code
+- Add alerts
 - Add ideas here!!
 
 ## Github workflows
